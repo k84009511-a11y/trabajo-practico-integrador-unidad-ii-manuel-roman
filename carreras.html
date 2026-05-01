@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carreras</title>
+    <link rel="stylesheet" href="css/style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
 </head>
 <body>
     <header>
@@ -31,11 +34,288 @@
   </div>
 </nav>
     </header>
-    <main>
+    <main class="container my-5">
+      <h1 class="Display-1 text-center" style="margin-bottom: 40px; border-bottom: white solid 2px; color: var(--color-2); width: 50%; margin-left: 25%;">Carreras</h1>
+      <div class="row g-4">
 
-    </main>
-    <footer>
+        
+        <div class= "col-md-6 mb-4 col-6 text-center" style="background-color: var(--color-6); border: none;">  
+          
+          
+          <!-- Desarrollo de software -->
+          <img src="imagenes/software.jpg" alt="software" class="image-thumbnail mb-3" style="width: 100%; height: auto; object-fit: cover; border-radius: 10px;">
+          
+          <button type="button" class="btn btn-primary w-100 py-4" data-bs-toggle="modal" data-bs-target="#modalsoftware" style="background-color: var(--color-3); border: none;">
+            Tecnicatura en Desarrollo de Software Multiplataforma
+          </button>
+          
+          <div class="modal fade" id="modalsoftware" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modalsoftwareLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header" style="background-color: var(--color-6); color: white;">
+                  <h1 class="modal-title fs-5" id="modalsoftwareLabel">Tecnicatura en Desarrollo de Software Multiplataforma</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                
+                <div class="modal-body">
+              
+                  <ul class="nav nav-tabs d-none" id="tabSoftware" role="tablist">
+                    <li class="nav-item">
+                      <button class="nav-link active" id="btn-p1-soft" data-bs-toggle="tab" data-bs-target="#pag1-soft" type="button">1</button>
+                    </li>
+                    <li class="nav-item">
+                      <button class="nav-link" id="btn-p2-soft" data-bs-toggle="tab" data-bs-target="#pag2-soft" type="button">2</button>
+                    </li>
+                  </ul>
+      
+                  <div class="tab-content">
+                    <div class="tab-pane fade show active" id="pag1-soft" role="tabpanel">
+                      <p>Formate para crear aplicaciones móviles y web de alto impacto. Aprendé a programar en diversos lenguajes, gestionar bases de datos y dominar las herramientas que lideran el mercado tecnológico actual.</p>
+                      <div>
+                        <h5>Duración</h5>
+                      </div>
+                      <p>2 años (3 cuatrimestres)</p>
+                    </div>
+                    
+                    
+                    <div class="tab-pane fade" id="pag2-soft" role="tabpanel">
+                      <h5>Requisitos de inscripción:</h5>
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Título secundario completo (o constancia)</li>
+                        <li class="list-group-item">Fotocopia de DNI y CUIL</li>
+                        <li class="list-group-item">Partida de nacimiento actualizada</li>
+                        <li class="list-group-item">Carpeta colgante y 2 fotos 4x4</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="modal-footer" style="background-color: var(--color-6); color: white;">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                  
+                  
+                  <button type="button" class="btn btn-primary" style="background-color: var(--color-3); border: none;" 
+                  onclick="const p7 = document.getElementById('btn-p2-soft'); const p8 = document.getElementById('btn-p1-soft'); if(p7.classList.contains('active')){ p8.click(); this.innerText='Siguiente'; } else { p7.click(); this.innerText='Volver'; }">
+                  Siguiente
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+        
+        <div class="col-md-6 mb-4 col-6 text-center" style="background-color: var(--color-6); border: none;">
 
-    </footer>
+
+          <!-- Mecatrona -->
+          <img src="imagenes/mecatronica.jpg" alt="mecatronica" class="image-thumbnail mb-3" style="width: 100%; height: auto; object-fit: cover; border-radius: 10px;">
+          
+          <button type="button" class="btn btn-primary w-100 py-4" data-bs-toggle="modal" data-bs-target="#modalmecatronica" style="background-color: var(--color-3); border: none;">
+            Tecnicatura Superior en Mecatrónica
+          </button>
+          
+          <div class="modal fade" id="modalmecatronica" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modalmecatronicaLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+              
+              <div class="modal-content">
+                <div class="modal-header" style="background-color: var(--color-6); color: white;">
+                  <h1 class="modal-title fs-5" id="modalmecatronicaLabel">Tecnicatura Superior en Mecatrónica</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            
+            <div class="modal-body">
+         
+              <ul class="nav nav-tabs d-none" id="tabMeca" role="tablist">
+                <li class="nav-item">
+                  <button class="nav-link active" id="btn-p1-meca" data-bs-toggle="tab" data-bs-target="#pag1-meca" type="button">1</button>
+                </li>
+                <li class="nav-item">
+                  <button class="nav-link" id="btn-p2-meca" data-bs-toggle="tab" data-bs-target="#pag2-meca" type="button">2</button>
+                </li>
+              </ul>
+              
+  
+              <div class="tab-content">
+              
+                <div class="tab-pane fade show active" id="pag1-meca" role="tabpanel">
+                  <p>Convertite en un experto en la integración de mecánica, electrónica y sistemas de control. Vas a poder diseñar y mantener equipos industriales automatizados, sistemas inteligentes y maquinaria de última generación.</p>
+                  <div>
+                    <h5>Duración</h5>
+                    <p>2 años (3 cuatrimestres)</p>
+                  </div>
+                </div>
+                
+     
+                <div class="tab-pane fade" id="pag2-meca" role="tabpanel">
+                  <h5>Requisitos de inscripción:</h5>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Título secundario completo (o constancia de título en trámite)</li>
+                    <li class="list-group-item">Fotocopia de DNI y CUIL</li>
+                    <li class="list-group-item">Partida de nacimiento actualizada</li>
+                    <li class="list-group-item">Carpeta colgante y 2 fotos 4x4</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            
+            <div class="modal-footer" style="background-color: var(--color-6); color: white;">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      
+              <button type="button" class="btn btn-primary" style="background-color: var(--color-3); border: none;" 
+              onclick="const p3 = document.getElementById('btn-p2-meca'); const p4 = document.getElementById('btn-p1-meca'); if(p3.classList.contains('active')){ p4.click(); this.innerText='Siguiente'; } else { p3.click(); this.innerText='Volver'; }">
+              Siguiente
+            </button>
+          </div>
+        </div>
+      </div>
+      </div>
+
+
+    </div>
+
+
+    <div class="col-md-6 mb-4 col-6 text-center" style="background-color: var(--color-6); border: none;">
+      
+<!-- Telecomunicaciones -->
+<img src="imagenes/telecomunicaciones.jpg" alt="telecomunicaciones" class="image-thumbnail mb-3" style="width: 100%; height: auto; object-fit: cover; border-radius: 10px;">
+
+<button type="button" class="btn btn-primary w-100 py-4" data-bs-toggle="modal" data-bs-target="#modaltelecomunicaciones" style="background-color: var(--color-3); border: none;">
+    Tecnicatura Superior en Telecomunicaciones
+</button>
+
+<div class="modal fade" id="modaltelecomunicaciones" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modaltelecomunicacionesLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header" style="background-color: var(--color-6); color: white;">
+                <h1 class="modal-title fs-5" id="modaltelecomunicacionesLabel">Tecnicatura Superior en Telecomunicaciones</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <div class="modal-body">
+          
+                <ul class="nav nav-tabs d-none" id="tabTelecom" role="tablist">
+                    <li class="nav-item">
+                        <button class="nav-link active" id="btn-p1-tele" data-bs-toggle="tab" data-bs-target="#pag1-tele" type="button">1</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link" id="btn-p2-tele" data-bs-toggle="tab" data-bs-target="#pag2-tele" type="button">2</button>
+                    </li>
+                </ul>
+
+         
+                <div class="tab-content">
+
+                    <div class="tab-pane fade show active" id="pag1-tele" role="tabpanel">
+                        <p>Especializate en la instalación y gestión de infraestructuras de red y sistemas de transmisión de datos. Aprendé sobre fibra óptica, comunicaciones inalámbricas y conectividad, claves para el desarrollo tecnológico de la región.</p>
+                    <div>
+                        <h5>Duración</h5>
+                        <p>2 años (3 cuatrimestres)</p>
+                    </div>
+                      </div>
+
+
+                    <div class="tab-pane fade" id="pag2-tele" role="tabpanel">
+                        <h5>Requisitos de inscripción:</h5>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Título secundario completo (o constancia en trámite)</li>
+                            <li class="list-group-item">Fotocopia de DNI y CUIL</li>
+                            <li class="list-group-item">Partida de nacimiento</li>
+                            <li class="list-group-item">2 fotos 4x4 y carpeta colgante</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-footer" style="background-color: var(--color-6); color: white;">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+              
+                <button type="button" class="btn btn-primary" style="background-color: var(--color-3); border: none;" 
+                        onclick="const p5 = document.getElementById('btn-p2-tele'); const p6 = document.getElementById('btn-p1-tele'); if(p5.classList.contains('active')){ p6.click(); this.innerText='Siguiente'; } else { p5.click(); this.innerText='Volver'; }">
+                    Siguiente
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    </div>
+
+
+    <div class="col-md-6 mb-4 col-6 text-center" style="background-color: var(--color-6); border: none;">
+      
+<!-- Quimica Industrial -->
+<img src="imagenes/quimica industrial.jpg" alt="Química Industrial" class="image-thumbnail mb-3" style="width: 100%; height: auto; object-fit: cover; border-radius: 10px;">
+
+<button type="button" class="btn btn-primary w-100 py-4" data-bs-toggle="modal" data-bs-target="#modalquimicaindustrial" style="background-color: var(--color-3); border: none;">
+    Tecnicatura Superior en Química Industrial
+</button>
+
+<div class="modal fade" id="modalquimicaindustrial" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modalquimicaindustrialLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header" style="background-color: var(--color-6); color: white;">
+                <h1 class="modal-title fs-5" id="modalquimicaindustrialLabel">Tecnicatura en Química Industrial</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <div class="modal-body">
+     
+                <ul class="nav nav-tabs d-none" id="tabQuim" role="tablist">
+                    <li class="nav-item">
+                        <button class="nav-link active" id="btn-p1-quim" data-bs-toggle="tab" data-bs-target="#pag1-quim" type="button">1</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link" id="btn-p2-quim" data-bs-toggle="tab" data-bs-target="#pag2-quim" type="button">2</button>
+                    </li>
+                </ul>
+
+
+                <div class="tab-content">
+  
+                    <div class="tab-pane fade show active" id="pag1-quim" role="tabpanel">
+                        <p>Aprendé a supervisar procesos químicos en plantas industriales, asegurando la calidad y el cumplimiento de normas de seguridad. Es fundamental para la producción de bienes y el control ambiental en sectores productivos.</p>
+                    <div>
+                        <h5>Duración</h5>
+                        <p>2 años (3 cuatrimestres)</p>
+                    </div>
+                      </div>
+
+  
+                    <div class="tab-pane fade" id="pag2-quim" role="tabpanel">
+                        <h5>Requisitos de inscripción:</h5>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Título secundario (o constancia de título en trámite)</li>
+                            <li class="list-group-item">Fotocopia de DNI y CUIL</li>
+                            <li class="list-group-item">Partida de nacimiento actualizada</li>
+                            <li class="list-group-item">Carpeta colgante y 2 fotos 4x4</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-footer" style="background-color: var(--color-6); color: white;">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        
+                <button type="button" class="btn btn-primary" style="background-color: var(--color-3); border: none;" 
+                        onclick="const p2 = document.getElementById('btn-p2-quim'); const p1 = document.getElementById('btn-p1-quim'); if(p2.classList.contains('active')){ p1.click(); this.innerText='Siguiente'; } else { p2.click(); this.innerText='Volver'; }">
+                    Siguiente
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    </div> 
+  </div>
+  </div>
+</div>
+</main>
+<footer>
+  
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
 </body>
 </html>
