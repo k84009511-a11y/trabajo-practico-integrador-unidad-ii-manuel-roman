@@ -167,3 +167,13 @@ div.multi-collapse{
     border: black solid 1px;
     border-radius: 20px;
 }
+/* apartado css para contacto */
+div.mb-4{
+    text-align: center;
+    background-color: var(--color-5);
+    color: white;
+    border: black solid 1px;
+}
+div.mapa-container{
+    margin-top: 20px;
+}
