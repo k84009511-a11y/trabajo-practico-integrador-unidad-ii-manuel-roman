@@ -13,6 +13,7 @@ body{
  font-family: 'Arial', sans-serif;
  height: 100%;
  width: 100%;
+ color: white !important;
 }
 
 section.bienvenida{
@@ -90,4 +91,79 @@ nav a.nav-link:hover{
     margin-right:  10px;
     font-size: large;
     transition: 0.3s;
+}
+/* apartado css para la institucion */
+section.Historia{
+    margin-left: 65px;
+    margin-right: 65px;
+    margin-top: 20px;
+    padding: 20px 10px;
+    color: white;
+    border: white solid 1px;
+    text-shadow: black 1px 1px 2px;
+}
+section.Historia h2{
+    color: var(--color-2);
+    border-bottom: white solid 1px;
+}
+section.Mision-y-Vision{
+    background-color:  var(--color-4);
+        padding-top: 15px;
+   margin-left: 65px;
+    margin-right: 65px;
+    border: black solid 1px;
+    color: var(--color-1);
+}
+section.Mision-y-Vision h2{
+    text-align: center;
+    color: var(--color-1);
+    background-color: var(--color-5);
+    border: black solid 2px;
+}
+section.Mision-y-Vision p{
+    background-color: var(--color-5);
+    border: black solid 1px;
+    padding: 10px;
+    margin: auto;
+    text-shadow: black 1px 1px 2px;
+}
+section.autoridades{
+    margin-left: 65px;
+    margin-right: 65px;
+    margin-top: 20px;
+    padding: 20px 10px;
+    color: white;
+    text-shadow: black 1px 1px 2px;
+}
+section.autoridades h4{
+    color: var(--color-2);
+    border-bottom: white solid 1px;
+}
+section.autoridades h3{
+    color: var(--color-2);
+}
+section.beneficios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    text-shadow: black 1px 1px 2px;
+}
+p a.btn-primary{
+    background-color: var(--color-2);
+    border: none;
+    width: 400px;
+    height: 50px;
+}
+p button.btn-primary{
+    background-color: var(--color-2);
+    border: none;
+    width: 400px;
+    height: 50px;
+}
+div.multi-collapse{
+    background-color: var(--color-5);
+    color: white;
+    border: black solid 1px;
+    border-radius: 20px;
 }
